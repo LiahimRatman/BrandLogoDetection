@@ -14,7 +14,7 @@ Dataset with Nike logos consists with Instagram posts of official Nike accounts 
 https://universe.roboflow.com/mikhail-korotkov/brand-logos-f5red
 
 # Train 
-You can train similar model by using train.py from `nike_detector.nike_detector.service.train`
+You can train similar model by using train.py from `nike_detector.nike_detector.service`
 At first you will need to install roboflow and ultralytics:
 
 ```shell
