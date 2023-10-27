@@ -15,11 +15,19 @@ https://universe.roboflow.com/mikhail-korotkov/brand-logos-f5red
 
 # Train 
 You can train similar model by using train.py from `nike_detector.nike_detector.service.train`
+At first you will need to install roboflow and ultralytics:
+
+```shell
+pip install roboflow
+pip install ultralytics
+```
 
 # Installation
 To use Nike logo detection you need to install it using pip:
 
-```pip install nike_detection==0.0.18```
+```shell
+pip install nike_detection==0.0.18
+```
 
 # Detection
 <p float="center">
@@ -28,7 +36,7 @@ To use Nike logo detection you need to install it using pip:
 
 To run detection on your image:
 
-```
+```python
 from PIL import Image
 from nike_detector.nike_detector.service.service import init_nike_model, predict
 
@@ -45,7 +53,7 @@ results = predict(im)
 # Track
 Similar for tracking:
 
-```
+```python
 from nike_detector.nike_detector.service.service import init_nike_model, track
 
 video = 'you_video_name.mp4'
@@ -61,13 +69,13 @@ results = track(video, False, False)
 You can also run this model in a Docker container. It is a basic version of FastApi with one endpoint "vectorize_batch" for detection. 
 You can easily build this image using:run container using:
 
-```
+```shell
 docker build -f Dockerfile -t you_image_name:v1.0.0 .
 ```
 
 and run it with:
 
-```
+```shell
 docker run -p 8021:8021 you_image_name:v1.0.0
 ```
 
