@@ -1,0 +1,4 @@
+fastapi==0.77.1
+uvicorn==0.11.1
+nike_detector==0.0.18
+Pillow==9.2.0
