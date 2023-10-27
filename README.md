@@ -22,6 +22,10 @@ To use Nike logo detection you need to install it using pip:
 ```pip install nike_detection==0.0.18```
 
 # Detection
+<p float="center">
+  <img src="https://github.com/LiahimRatman/BrandLogoDetection/blob/main/image1.jpg" width="800" />
+</p>
+
 To run detection on your image:
 
 ```
