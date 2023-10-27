@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nike_detector"
+version = "0.0.18"
+authors = [
+    { name="korotkov", email="ma-korotkov@yandex.ru" },
+]
+description = "Package for Nike logos detection"
+requires-python = ">=3.7"
+classifiers = [
+   "Programming Language :: Python :: 3",
+   "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "torch==1.13.1",
+    "ultralytics==8.0.164",
+    "Pillow==9.2.0",
+    "gdown==4.7.1",
+    "marshmallow_dataclass==8.5.8",
+    "dataclasses==0.6"
+]
+
+[tool.setuptools.packages]
+find = {}
