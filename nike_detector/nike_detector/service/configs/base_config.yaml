@@ -1,0 +1,4 @@
+brand_name: NIKE
+confidence: 0.5
+output_images_dir: output
+model_path: https://drive.google.com/uc?id=1xk3ei6v8qzpeFN9SZXUzQO6ra0tMsdvR
