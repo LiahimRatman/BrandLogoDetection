@@ -67,13 +67,13 @@ results = track(video, False, False)
 
 # Set up image detection API in Docker
 You can also run this model in a Docker container. It is a basic version of FastApi with one endpoint "vectorize_batch" for detection. 
-You can easily build this image using:run container using:
+You can easily build this image using:
 
 ```shell
 docker build -f Dockerfile -t you_image_name:v1.0.0 .
 ```
 
-and run it with:
+and run the container with:
 
 ```shell
 docker run -p 8021:8021 you_image_name:v1.0.0
